@@ -28,7 +28,7 @@ var ChildSchema = mongoose.Schema({
 var Child = module.exports = mongoose.model('Child', ChildSchema);
 
 module.exports.getAllChildProfile = function(callback){
-    District.find({}, callback);
+    Child.find({}, callback);
 }
 
 module.exports.addNewChildProfile = function(child, callback){
